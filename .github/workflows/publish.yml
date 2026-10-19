@@ -1,0 +1,30 @@
+name: Publish Package to npm
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04 # Lock runner version to eliminate Ubuntu 26 migration alerts
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24' # Uses modern Node.js runtime to eliminate EOL warnings
+          registry-url: 'https://npmjs.org'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Package
+        run: npm run build
+
+      - name: Authenticate and Publish to npm
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
