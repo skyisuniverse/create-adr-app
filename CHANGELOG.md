@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 
 
+## [0.2.1](https://github.com/skyisuniverse/simulation-tool/compare/v0.2.0..v0.2.1) - 2026-11-15
+
+### 📚 Documentation
+
+- **(devdocs)**: Add development docs (changelog generation, release strategy) and update project readme - ([d31fc6f](https://github.com/skyisuniverse/simulation-tool/commit/d31fc6f3268730280809c70b1e14ad61ad11a7c8))
+
+### ⚙️  Chore
+
+- **(release)**: V0.2.0 - ([2706392](https://github.com/skyisuniverse/simulation-tool/commit/27063923bc9d2dbc222d7850002351f6e86c8a9d))
+
 ## [0.2.0](https://github.com/skyisuniverse/simulation-tool/compare/v0.1.0..v0.2.0) - 2026-11-15
 
 ### 🚀 Features
