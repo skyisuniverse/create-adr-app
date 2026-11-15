@@ -2,10 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+
+## [0.2.0](https://github.com/skyisuniverse/simulation-tool/compare/v0.1.0..v0.2.0) - 2026-11-15
 
 ### 🚀 Features
 
+- **(changelog-gen)**: Add changelog generation with git-cliff - ([ce9642d](https://github.com/skyisuniverse/simulation-tool/commit/ce9642d427cb8f1d231467ea683b17bc47a1e109))
 - **(git-submodules)**: Add architecture-decision-records and simulation-tool as git submodules - ([ca5e982](https://github.com/skyisuniverse/simulation-tool/commit/ca5e982cd18df2d9b1df91514a9305129fe5a9ce))
 ## [0.1.0] - 2026-10-19
 
