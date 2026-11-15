@@ -38,6 +38,24 @@ The scaffolded file structures are setup as [git-submodules](./development-docs/
 
 ## Development documentation
 
+- [Publishing (npm package)](./development-docs/publishing.md)
 - [Git-submodules](./development-docs/git-submodules.md)
 - [Changelog generation](./development-docs/changelog-generation.md)
 - [Release strategy](./development-docs/release-strategy.md)
+
+## ToDo
+
+- [ ] Currently [index.ts](./src/index.ts) contains instructions for running [architecture-decision-records](./template/architecture-decision-records/package.json) app only. Update instructions for other scaffolded apps, libs, tools, once those are ready.
+
+  ```typescript
+  console.log(pc.green('✔ Success! Project scaffolded with the following apps:'));
+  
+  for (const appName of APPS) {
+    console.log(`  - ${pc.bold(appName)}`);
+  }
+  
+  console.log('\nNext steps:');
+  console.log(`  cd ${projectDirName}/architecture-decision-records`);
+  console.log('  npm install');
+  console.log('  npm run dev\n');
+  ```
