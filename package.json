@@ -1,6 +1,6 @@
 {
   "name": "create-adr-app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Scaffold an Architecture Decision Records app instantly.",
   "main": "dist/index.js",
   "bin": {

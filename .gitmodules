@@ -1,0 +1,6 @@
+[submodule "template/architecture-decision-records"]
+	path = template/architecture-decision-records
+	url = https://github.com/skyisuniverse/architecture-decision-records
+[submodule "template/simulation-tool"]
+	path = template/simulation-tool
+	url = https://github.com/skyisuniverse/simulation-tool
