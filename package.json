@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "generate:changelog": "./node_modules/.bin/git-cliff --config changelog-template.toml --output CHANGELOG.md"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "@types/node": "^26.6.5",
+    "git-cliff": "^2.14.2",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   },
